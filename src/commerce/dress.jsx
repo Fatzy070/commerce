@@ -24,8 +24,8 @@ const Data = [
             {id:3 ,  name:'contact'}
         ],
         faq: [
-            {id:1 , name:'FAQs'},
-            {id:2 , name:'Help'},
+            {id:1 , name:'FAQs |'},
+            {id:2 , name:'Help |'},
             {id:3 , name:'Support'}
         ],
         E: 'shopper',

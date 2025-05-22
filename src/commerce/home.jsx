@@ -3,7 +3,7 @@ import Data from "./dress"
 import Pages from "./source"
 
 let Home =() => {
-    const { shop , dress , faq , E } = Data[0]
+    const { faq , E } = Data[0]
 
 
     return (
