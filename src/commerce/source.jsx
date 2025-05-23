@@ -6,11 +6,15 @@ import caro1 from '../assets/carousel-2 (1).jpeg'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 let Pages = () => {
     const {shirt , cate , dres , men , shop} = Data[0];
     const [showText , setShowtext] = useState(false);
     const [showMen , setShowMen] = useState(false)
+    const [isOpen, setIsOpen] = useState(false)
+
 
     const handleclick = () => {
         setShowtext(!showText)
@@ -22,6 +26,7 @@ let Pages = () => {
     };
 
    
+       
         const settings = {
           dots: false,
           infinite: true,
@@ -33,6 +38,7 @@ let Pages = () => {
         };
 
     return (
+        <>
         <div className="flex gap-7 lg:pl-[3.5rem] border-t-1 border-gray-100 ">
         <section className="w-[250px] capitalize font-semibold hidden lg:block ">
             <div onClick={handleclick} className="flex justify-between  py-5 bg-[rgba(209,156,151,255)] px-5  w-[100%]">
@@ -68,9 +74,14 @@ let Pages = () => {
             </div>
           )}
         </section>
-        <section className="">
         
-           <div className="flex flex-wrap py-3 justify-between">
+        <section className="">
+        <div>
+        <div className="block lg:hidden">
+          <i className="fa-solid fa-bars text-xl cursor-pointer"  onClick={() => setIsOpen(!isOpen)} ></i>
+        </div>
+
+           <div className={`${isOpen ? 'flex' : 'hidden'} flex-col lg:flex-row lg:flex  py-3 justify-between`}>
                 <div>
                      <ul className="flex flex-col lg:flex-row capitalize gap-5  text-[1.1rem]">
                         {shop.map((item , index) => (
@@ -80,7 +91,7 @@ let Pages = () => {
                 }
                 </ul>
                 </div>
-                <div className="capitalize flex gap-4">
+                <div className="capitalize lg:flex-row flex-col  flex gap-4">
                     <div className="shirt">
                         <p>login</p>
                     </div>
@@ -89,6 +100,7 @@ let Pages = () => {
                     </div>
                 </div>
            </div>
+        </div>
        
                 
        <div  className="w-[350px] lg:w-[850px] ">
@@ -118,11 +130,13 @@ let Pages = () => {
                  </div>
             </div>
 
-        </Slider>
+            </Slider>
         </div>
-      
         </section>
         </div>
+       
+         
+    </>
     )
 } 
 export default Pages

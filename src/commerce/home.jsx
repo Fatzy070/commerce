@@ -1,4 +1,4 @@
-
+import Cloth from "./cloth"
 import Data from "./dress"
 import Pages from "./source"
 
@@ -53,6 +53,7 @@ let Home =() => {
            </div>
         </section>
         <Pages />
+        <Cloth />
         </>
     )
 }
