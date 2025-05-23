@@ -4,6 +4,8 @@ import cat4 from '../assets/cat-4.jpeg'
 import cat5 from '../assets/cat-5.jpeg'
 import cat6 from '../assets/cat-6.jpeg'
 import product from '../assets/product-3.jpeg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheck , faTruckFast  , faArrowRightArrowLeft , faPhoneVolume} from '@fortawesome/free-solid-svg-icons';
 
 
 const Data = [
@@ -44,9 +46,22 @@ const Data = [
         dres:'dresses',
         men: [
             {id:1  , name:`men's dresses`},
-            {id:1  , name:`women's dresses`},
-            {id:1  , name:`baby's dresses`}
+            {id:2  , name:`women's dresses`},
+            {id:3  , name:`baby's dresses`}
         ],
+        support: [
+            {id:1 , name:'quality product' , icon: faCheck },
+            {id:2 , name:'free shipping' , icon: faTruckFast },
+            {id:3 , name:'14-day return' , icon: faArrowRightArrowLeft },
+            {id:4 , name:'24/7 support' , icon: faPhoneVolume },
+
+        ],
+        baby: [
+            {id:1 , name:`15 products` , image:product , men: `men's dresses`},
+            {id:1 , name:`15 products` , image:cat2 , men:`women's dresses`},
+            {id:1 , name:`15 products` , image:cat3 , men:`baby's dresses`},
+            {id:1 , name:`15 products` , image:cat3 , men:`baby's dresses`},
+        ]
     }
 
 ]

@@ -8,7 +8,11 @@ import './tailwind.css'
 import Home from './commerce/home.jsx'
 
 createRoot(document.getElementById('root')).render(
-  
-    <Home />
+    <StrictMode>
+    <BrowserRouter>
+      <Home />
+    </BrowserRouter>
+  </StrictMode>
+
   
 )

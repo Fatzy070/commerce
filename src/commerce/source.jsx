@@ -6,11 +6,10 @@ import caro1 from '../assets/carousel-2 (1).jpeg'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+
 
 let Pages = () => {
-    const {shirt , cate , dres , men , shop} = Data[0];
+    const {shirt , cate , E, dres , men , shop} = Data[0];
     const [showText , setShowtext] = useState(false);
     const [showMen , setShowMen] = useState(false)
     const [isOpen, setIsOpen] = useState(false)
@@ -77,9 +76,19 @@ let Pages = () => {
         
         <section className="">
         <div>
+        <section className="flex justify-between items-center mx-3">
+        <div className=" flex items-center lg:hidden gap-2 text-5xl capitalize font-bold ">
+            <div className="border-1 text-[rgba(220,171,155,255)] border-gray-400 px-3 py-1">
+                <h1>E</h1>
+                </div>
+            <div className="font-semibold ">
+                <h1>{E}</h1>
+            </div>
+        </div>
         <div className="block lg:hidden">
           <i className="fa-solid fa-bars text-xl cursor-pointer"  onClick={() => setIsOpen(!isOpen)} ></i>
         </div>
+        </section>
 
            <div className={`${isOpen ? 'flex' : 'hidden'} flex-col lg:flex-row lg:flex  py-3 justify-between`}>
                 <div>
@@ -135,7 +144,7 @@ let Pages = () => {
         </section>
         </div>
        
-         
+        
     </>
     )
 } 
