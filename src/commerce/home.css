@@ -5,3 +5,20 @@
   
     background-color: #fff;
 }
+.baby {
+    transition: 1s ease-in-out;
+}
+.baby:hover {
+    transform: scale(1.2);
+    
+}
+.shop {
+    transition: 300ms ease-in-out;
+}
+.shop:hover {
+    background-color: rgba(220,171,155,255);
+    color: black; 
+}
+.sub:hover {
+    color: #fff;
+}

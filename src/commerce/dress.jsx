@@ -10,6 +10,7 @@ import product4 from '../assets/product-4.jpeg'
 import product5 from '../assets/product-5.jpeg'
 import product6 from '../assets/product-6.jpeg'
 import product7 from '../assets/product-7.jpeg'
+import product8 from '../assets/product-8.jpeg'
 import offer1 from '../assets/offer-1.png'
 import offer2 from '../assets/offer-2.png'
 import { faCheck, faTruckFast, faEye ,  faArrowRightArrowLeft, faCartShopping, faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
@@ -56,12 +57,12 @@ const Data = [
             { id: 4, name: '24/7 support', icon: faPhoneVolume },
         ],
         baby: [
-            {id:1 , name:`15 products` , image:product3 , men: `men's dresses`},
-            {id:3 , name:`15 products` , image:cat2 , men:`women's dresses`},
-            {id:2 , name:`15 products` , image:cat3 , men:`baby's dresses`},
-            {id:4 , name:`15 products` , image:cat4 , men:`accerssories`},
-            {id:4 , name:`15 products` , image:cat4 , men:`bags`},
-            {id:4 , name:`15 products` , image:cat4 , men:`shoes`},
+            {id:1 , name:`15 products` , image:product3 , men: `Men's dresses`},
+            {id:3 , name:`15 products` , image:cat2 , men:`Women's dresses`},
+            {id:2 , name:`15 products` , image:cat3 , men:`Baby's dresses`},
+            {id:4 , name:`15 products` , image:cat4 , men:`Accerssories`},
+            {id:4 , name:`15 products` , image:cat5 , men:`Bags`},
+            {id:4 , name:`15 products` , image:cat6 , men:`Shoes`},
         ],
         spring: {
             image: offer1 , 
@@ -71,19 +72,19 @@ const Data = [
           },     
         springs: {
             image: offer2 ,
-            discount: "20% off the order",
-            collectionName: "Spring Collection",
-            shopText: "Shop Now"
+            collectionName: "Winter Collection",
           },
           trandy : [
-            {id:1 , color:'colourful stylish shirt' , price: `$123.00` , icon1:faEye , icon2: faCartShopping , image: product1 },
-            {id:2 , color:'colourful stylish shirt' , price: `$123.00` , icon1:faEye , icon2: faCartShopping , image: product2 },
-            {id:2 , color:'colourful stylish shirt' , price: `$123.00` , icon1:faEye , icon2: faCartShopping , image: product3 },
-            {id:2 , color:'colourful stylish shirt' , price: `$123.00` , icon1:faEye , icon2: faCartShopping , image: product4 },
-            {id:2 , color:'colourful stylish shirt' , price: `$123.00` , icon1:faEye , icon2: faCartShopping , image: product5 },
-            {id:2 , color:'colourful stylish shirt' , price: `$123.00` , icon1:faEye , icon2: faCartShopping , image: product6 },
-            {id:2 , color:'colourful stylish shirt' , price: `$123.00` , icon1:faEye , icon2: faCartShopping , image: product7 },
-          ]        
+            {id:1 , color:'colourful stylish shirt' , price: `$123.00` , icon1:faEye , icon2: faCartShopping , image: product1 , view: 'view detail' , cart : 'add to cart'},
+            {id:2 , color:'colourful stylish shirt' , price: `$123.00` , icon1:faEye , icon2: faCartShopping , image: product2 , view: 'view detail' , cart : 'add to cart' },
+            {id:3 , color:'colourful stylish shirt' , price: `$123.00` , icon1:faEye , icon2: faCartShopping , image: product3 , view: 'view detail' , cart : 'add to cart' },
+            {id:4 , color:'colourful stylish shirt' , price: `$123.00` , icon1:faEye , icon2: faCartShopping , image: product4 , view: 'view detail' , cart : 'add to cart' },
+            {id:5 , color:'colourful stylish shirt' , price: `$123.00` , icon1:faEye , icon2: faCartShopping , image: product5 , view: 'view detail' , cart : 'add to cart' },
+            {id:6 , color:'colourful stylish shirt' , price: `$123.00` , icon1:faEye , icon2: faCartShopping , image: product6 , view: 'view detail' , cart : 'add to cart' },
+            {id:7 , color:'colourful stylish shirt' , price: `$123.00` , icon1:faEye , icon2: faCartShopping , image: product7 , view: 'view detail' , cart : 'add to cart' },
+            {id:8 , color:'colourful stylish shirt' , price: `$123.00` , icon1:faEye , icon2: faCartShopping , image:product8 , view: 'view detail' , cart : 'add to cart' },
+          ]   ,
+          lorem:'Amet lorem at rebum amet dolores. Elitr lorem dolor sed amet diam labore at justo ipsum eirmod duo labore labore.'     
     }
 
 ]
