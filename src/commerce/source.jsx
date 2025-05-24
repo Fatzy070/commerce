@@ -74,10 +74,10 @@ let Pages = () => {
           )}
         </section>
         
-        <section className="">
+        <section className="w-full">
         <div>
-        <section className="flex justify-between items-center mx-3">
-        <div className=" flex items-center lg:hidden gap-2 text-5xl capitalize font-bold ">
+        <section className="flex justify-between items-center mx-3 mb-4">
+        <div className=" flex items-center lg:hidden gap-2 text-4xl capitalize font-bold ">
             <div className="border-1 text-[rgba(220,171,155,255)] border-gray-400 px-3 py-1">
                 <h1>E</h1>
                 </div>
@@ -85,12 +85,12 @@ let Pages = () => {
                 <h1>{E}</h1>
             </div>
         </div>
-        <div className="block lg:hidden">
-          <i className="fa-solid fa-bars text-xl cursor-pointer"  onClick={() => setIsOpen(!isOpen)} ></i>
+        <div className="block lg:hidden border border-gray-500 px-4 py-1">
+          <i className="fa-solid fa-bars text-2xl cursor-pointer "  onClick={() => setIsOpen(!isOpen)} ></i>
         </div>
         </section>
 
-           <div className={`${isOpen ? 'flex' : 'hidden'} flex-col lg:flex-row lg:flex  py-3 justify-between`}>
+           <div className={`${isOpen ? 'flex' : 'hidden'} pl-3 lg:pl-0 flex-col lg:flex-row lg:flex  py-3 justify-between`}>
                 <div>
                      <ul className="flex flex-col lg:flex-row capitalize gap-5  text-[1.1rem]">
                         {shop.map((item , index) => (
@@ -100,8 +100,8 @@ let Pages = () => {
                 }
                 </ul>
                 </div>
-                <div className="capitalize lg:flex-row flex-col  flex gap-4">
-                    <div className="shirt">
+                <div className="capitalize lg:flex-row text-[1.1rem] flex-col  flex gap-4">
+                    <div className="shirt pt-2 lg:pt-0">
                         <p>login</p>
                     </div>
                     <div className="shirt">
@@ -110,15 +110,14 @@ let Pages = () => {
                 </div>
            </div>
         </div>
-       
-                
-       <div  className="w-[350px] lg:w-[850px] ">
+          
+       <div  className="w-[95%] lg:w-[850px] pl-2 ">
         <Slider {...settings}>
-        <div className="text-center relative text-white h-[400px] lg:h-[430px]">
-                 <img src={caro} alt={men} className=" h-full w-full lg:w-full lg:h-full"  />
+        <div className="text-center relative text-white h-[350px] lg:h-[430px]">
+                 <img src={caro} alt={men} className="object-cover h-full w-full lg:w-full lg:h-full"  />
                  <div className=" absolute left-[5%] lg:left-[25%] top-[30%]">
-                    <h3 className="text-2xl lg:text-3xl font-semibold uppercase">10% off your first order</h3>
-                    <h2 className="py-[1.5rem] capitalize text-4xl lg:text-6xl font-bold">Fashionable Dress</h2>
+                    <h3 className="text-[1.3rem] lg:text-3xl font-semibold uppercase">10% off your first order</h3>
+                    <h2 className="py-4 lg:py-[1.5rem] capitalize text-3xl lg:text-6xl font-bold">Fashionable Dress</h2>
                     <div className="flex justify-center">
                     <div className=" capitalize w-[120px] h-[40px] flex justify-center items-center font-semibold bg-white text-black">
                         <p>shop now</p>
@@ -126,11 +125,11 @@ let Pages = () => {
                     </div>
                  </div>
             </div>
-            <div className="text-center relative text-white h-[400px] lg:h-[430px]">
-                 <img src={caro1} alt={men} className=" w-full h-full lg:w-full lg:h-full" />
+            <div className="text-center relative text-white h-[350px] lg:h-[430px]">
+                 <img src={caro1} alt={men} className="object-cover w-full h-full lg:w-full lg:h-full" />
                  <div className=" absolute left-[5%] lg:left-[25%] top-[30%]">
-                    <h3 className=" text-2xl lg:text-3xl font-semibold uppercase">10% off your first order</h3>
-                    <h2 className="py-[1.5rem] capitalize text-4xl lg:text-6xl font-bold">reasonable price</h2>
+                    <h3 className=" text-[1.3rem] lg:text-3xl font-semibold uppercase">10% off your first order</h3>
+                    <h2 className=" py-4 lg:py-[1.5rem] capitalize text-3xl lg:text-6xl font-bold">reasonable price</h2>
                     <div className="flex justify-center">
                     <div className=" capitalize w-[120px] h-[40px] flex justify-center items-center font-semibold bg-white text-black">
                         <p>shop now</p>
