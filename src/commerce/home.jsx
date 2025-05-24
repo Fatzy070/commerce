@@ -9,7 +9,7 @@ let Home =() => {
     return (
         <>
         <section className="bg-[rgba(237,241,255,255)] flex justify-center lg:justify-between px-10 py-2">
-        <div className="lg:flex gap-[1rem] text-[1.1rem] hidden lg:block">
+        <div className="lg:flex gap-[1rem] text-[1.1rem] hidden ">
            {faq.map((item ,index) => (
             <p key={index}>{item.name}</p>
            ))}

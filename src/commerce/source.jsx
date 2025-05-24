@@ -39,7 +39,7 @@ let Pages = () => {
     return (
         <>
         <div className="flex gap-7 lg:pl-[3.5rem] border-t-1 border-gray-100 ">
-        <section className="w-[250px] capitalize font-semibold hidden lg:block ">
+        <section className="w-[300px] capitalize font-semibold hidden lg:block ">
             <div onClick={handleclick} className="flex justify-between  py-5 bg-[rgba(209,156,151,255)] px-5  w-[100%]">
                 <div>
                     <h2>{cate}</h2>
@@ -74,7 +74,7 @@ let Pages = () => {
           )}
         </section>
         
-        <section className="w-full">
+        <section className="w-full ">
         <div>
         <section className="flex justify-between items-center mx-3 mb-4">
         <div className=" flex items-center lg:hidden gap-2 text-4xl capitalize font-bold ">
@@ -100,8 +100,8 @@ let Pages = () => {
                 }
                 </ul>
                 </div>
-                <div className="capitalize lg:flex-row text-[1.1rem] flex-col  flex gap-4">
-                    <div className="shirt pt-2 lg:pt-0">
+                <div className="capitalize lg:flex-row text-[1.1rem] flex-col lg:pr-30  flex gap-4">
+                    <div className="shirt pt-2 lg:pt-0 ">
                         <p>login</p>
                     </div>
                     <div className="shirt">

@@ -12,8 +12,8 @@ import product6 from '../assets/product-6.jpeg'
 import product7 from '../assets/product-7.jpeg'
 import offer1 from '../assets/offer-1.png'
 import offer2 from '../assets/offer-2.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheck , faTruckFast , faEye , faCartShopping  , faArrowRightArrowLeft , faPhoneVolume} from '@fortawesome/free-solid-svg-icons';
+import { faCheck, faTruckFast, faEye ,  faArrowRightArrowLeft, faCartShopping, faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 const Data = [
@@ -50,11 +50,10 @@ const Data = [
             {id:3  , name:`baby's dresses`}
         ],
         support: [
-            {id:1 , name:'quality product' , icon: faCheck },
-            {id:2 , name:'free shipping' , icon: faTruckFast },
-            {id:3 , name:'14-day return' , icon: faArrowRightArrowLeft },
-            {id:4 , name:'24/7 support' , icon: faPhoneVolume },
-
+            { id: 1, name: 'quality product', icon: faCheck },
+            { id: 2, name: 'free shipping', icon: faTruckFast },
+            { id: 3, name: '14-day return', icon: faArrowRightArrowLeft },
+            { id: 4, name: '24/7 support', icon: faPhoneVolume },
         ],
         baby: [
             {id:1 , name:`15 products` , image:product3 , men: `men's dresses`},
