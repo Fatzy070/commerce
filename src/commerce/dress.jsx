@@ -13,6 +13,14 @@ import product7 from '../assets/product-7.jpeg'
 import product8 from '../assets/product-8.jpeg'
 import offer1 from '../assets/offer-1.png'
 import offer2 from '../assets/offer-2.png'
+import vendor1 from '../assets/vendor-1.jpeg'
+import vendor2 from '../assets/vendor-2.jpeg'
+import vendor3 from '../assets/vendor-3.jpeg'
+import vendor4 from '../assets/vendor-4.jpeg'
+import vendor5 from '../assets/vendor-5.jpeg'
+import vendor6 from '../assets/vendor-6.jpeg'
+import vendor7 from '../assets/vendor-7.jpeg'
+import vendor8 from '../assets/vendor-8.jpeg'
 import { faCheck, faTruckFast, faEye ,  faArrowRightArrowLeft, faCartShopping, faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -84,7 +92,17 @@ const Data = [
             {id:7 , color:'colourful stylish shirt' , price: `$123.00` , icon1:faEye , icon2: faCartShopping , image: product7 , view: 'view detail' , cart : 'add to cart' },
             {id:8 , color:'colourful stylish shirt' , price: `$123.00` , icon1:faEye , icon2: faCartShopping , image:product8 , view: 'view detail' , cart : 'add to cart' },
           ]   ,
-          lorem:'Amet lorem at rebum amet dolores. Elitr lorem dolor sed amet diam labore at justo ipsum eirmod duo labore labore.'     
+          lorem:'Amet lorem at rebum amet dolores. Elitr lorem dolor sed amet diam labore at justo ipsum eirmod duo labore labore.',
+          vendor: [
+            {id:1 , image: vendor1},
+            {id:1 , image: vendor2},
+            {id:1 , image: vendor3},
+            {id:1 , image: vendor4},
+            {id:1 , image: vendor5},
+            {id:1 , image: vendor6},
+            {id:1 , image: vendor7},
+            {id:1 , image: vendor8},
+          ]     
     }
 
 ]

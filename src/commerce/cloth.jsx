@@ -1,9 +1,42 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Shirt from './shirt';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import Data from "./dress"
 let Cloth = () => {
-    const {support , baby , spring , springs , lorem} =Data[0]
+    const {support , baby , spring , springs , lorem , vendor} =Data[0]
+     const settings = {
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 4, // default for large screens
+  slidesToScroll: 1,
+  autoplay: true,
+  arrows: true,
+  responsive: [
+    {
+      breakpoint: 1024, // screens smaller than 1024px (lg and down)
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 768, // screens smaller than 768px (md and down)
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 640, // screens smaller than 640px (sm and down)
+      settings: {
+        slidesToShow: 2,
+      }
+    }
+  ]
+};
+
 
     return( 
     <div>
@@ -87,9 +120,25 @@ let Cloth = () => {
                     <button type='submit' className='sub h-[50px] bg-[rgba(209,156,151,255)] px-3 lg:w-[150px] capitalize font-semibold'>subscribe</button>
                   </form>
               </div>
-            
             </section>
         </div>
+        <div class="flex items-center justify-center my-8">
+             <div class="w-16 lg:w-20 border-t-2 border-black mx-4"></div>
+            <h2 class="text-[1.2rem] lg:text-4xl font-bold capitalize">just arrived</h2>
+             <div class="w-16 lg:w-20 border-t-2 border-black mx-4"></div>
+        </div>
+        <Shirt />
+        <div className='mx-10 my-10'>
+            <Slider {...settings}>
+                    {vendor.map((item , key) => (
+                    <div key={key} className="px-2"> 
+                       <div className="border border-gray-300 w-[200px] m-auto">
+                          <img src={item.image} alt={item.id}  />
+                       </div>
+                    </div>
+                ))}
+            </Slider> 
+            </div>
     </div>
     )
 }
