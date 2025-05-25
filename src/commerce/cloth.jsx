@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Shirt from './shirt';
+import Footer from './footer';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,7 +12,7 @@ let Cloth = () => {
   dots: false,
   infinite: true,
   speed: 500,
-  slidesToShow: 4, // default for large screens
+  slidesToShow: 6, // default for large screens
   slidesToScroll: 1,
   autoplay: true,
   arrows: true,
@@ -100,18 +101,18 @@ let Cloth = () => {
                     </div>
                 </div>
         </div>
-        <div class="flex items-center justify-center my-8">
-             <div class="w-16 lg:w-20 border-t-2 border-black mx-4"></div>
-            <h2 class="text-[1.2rem] lg:text-4xl font-bold">Trandy Products</h2>
-             <div class="w-16 lg:w-20 border-t-2 border-black mx-4"></div>
+        <div className="flex items-center justify-center my-8">
+             <div className="w-16 lg:w-20 border-t-2 border-black mx-4"></div>
+            <h2 className="text-[1.2rem] lg:text-4xl font-bold">Trandy Products</h2>
+             <div className="w-16 lg:w-20 border-t-2 border-black mx-4"></div>
         </div>
         <Shirt />
         <div className=' bg-[rgba(237,241,255,255)] my-[3rem] py-15 flex justify-center'>
             <section className=' lg:w-[45%]'>
-                <div class="flex items-center justify-center my-8">
-                <div class="w-16 lg:w-13 border-t-2 border-black mx-3 lg:mx-4"></div>
-                <h2 class="text-[1.4rem] lg:text-4xl font-bold text-center capitalize">stay updated</h2>
-                 <div class="w-16 lg:w-13 border-t-2 border-black mx-3 lg:mx-4"></div>
+                <div className="flex items-center justify-center my-8">
+                <div className="w-16 lg:w-13 border-t-2 border-black mx-3 lg:mx-4"></div>
+                <h2 className="text-[1.4rem] lg:text-4xl font-bold text-center capitalize">stay updated</h2>
+                 <div className="w-16 lg:w-13 border-t-2 border-black mx-3 lg:mx-4"></div>
                 </div>
                 <p className='text-[1.1rem] text-center font-normal text-gray-500'>{lorem}</p>
               <div className="flex justify-center lg:block">
@@ -122,23 +123,24 @@ let Cloth = () => {
               </div>
             </section>
         </div>
-        <div class="flex items-center justify-center my-8">
-             <div class="w-16 lg:w-20 border-t-2 border-black mx-4"></div>
-            <h2 class="text-[1.2rem] lg:text-4xl font-bold capitalize">just arrived</h2>
-             <div class="w-16 lg:w-20 border-t-2 border-black mx-4"></div>
+        <div className="flex items-center justify-center my-8">
+             <div className="w-16 lg:w-20 border-t-2 border-black mx-4"></div>
+            <h2 className="text-[1.2rem] lg:text-4xl font-bold capitalize">just arrived</h2>
+             <div className="w-16 lg:w-20 border-t-2 border-black mx-4"></div>
         </div>
         <Shirt />
         <div className='mx-10 my-10'>
             <Slider {...settings}>
                     {vendor.map((item , key) => (
-                    <div key={key} className="px-2"> 
-                       <div className="border border-gray-300 w-[200px] m-auto">
+                    <div key={key}> 
+                       <div className="border border-gray-300 w-[180px] ">
                           <img src={item.image} alt={item.id}  />
                        </div>
                     </div>
                 ))}
             </Slider> 
             </div>
+            <Footer></Footer>
     </div>
     )
 }

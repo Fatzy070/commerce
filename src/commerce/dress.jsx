@@ -21,7 +21,7 @@ import vendor5 from '../assets/vendor-5.jpeg'
 import vendor6 from '../assets/vendor-6.jpeg'
 import vendor7 from '../assets/vendor-7.jpeg'
 import vendor8 from '../assets/vendor-8.jpeg'
-import { faCheck, faTruckFast, faEye ,  faArrowRightArrowLeft, faCartShopping, faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
+import { faCheck, faTruckFast , faChevronRight, faEye ,  faArrowRightArrowLeft, faCartShopping, faPhoneVolume , faLocationDot , faEnvelope , faPhone} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
@@ -102,7 +102,27 @@ const Data = [
             {id:1 , image: vendor6},
             {id:1 , image: vendor7},
             {id:1 , image: vendor8},
-          ]     
+          ],
+          quick:[
+            {id:1 , name:'home' , icon:faChevronRight },
+            {id:1 , name:'our shop' , icon:faChevronRight },
+            {id:1 , name:'shop details' , icon:faChevronRight },
+            {id:1 , name:'shopping cart' , icon:faChevronRight },
+            {id:1 , name:'check out' , icon:faChevronRight },
+            {id:1 , name:'contact us' , icon:faChevronRight },
+          ] ,
+          lorem1:'Dolore erat dolor sit lorem vero amet. Sed sit lorem magna, ipsum no sit erat lorem et magna ipsum dolore amet erat.',
+          newa: [
+            {id:1 , name: "123 Street , NEW YORK , USA" , icon:faLocationDot},
+            {id:1 , name: "info@example.com" , icon:faCheck},
+            {id:1 , name: "+012 345 67890" , icon:faPhone},
+          ],
+          links:'quick links',
+          letter:'news letter',
+          site:'Your Site Name.',
+          right:'all rights reserved. designed by',
+          fatzy:'FATZY..!',
+          des:'Distributed by'
     }
 
 ]
