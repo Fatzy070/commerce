@@ -64,7 +64,7 @@ let Footer = () => {
                     </div>
                 </div>
                 <div className="w-full lg:w-auto ">
-                    <h1 className=" text-2xl capitalize font-bold" >{letter}</h1>
+                    <h1 className="text-start text-2xl capitalize font-bold" >{letter}</h1>
                     <form action="" className="pt-5">
                         <input type="text" placeholder="Your Name" className="bg-white w-[100%] h-[50px] pl-2.5 mb-4" /> <br/>
                         <input type="text" placeholder="Your Email" className="bg-white w-[100%] h-[50px] pl-2.5 mb-4"  /> <br/>
