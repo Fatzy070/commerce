@@ -46,7 +46,7 @@ let Footer = () => {
                         ))}
                     </div>
                 </div>
-               <div className="w-full flex justify-center lg:w-auto">
+               <div className="w-full flex  lg:w-auto">
                     <div>
                         <h1 className="text-2xl capitalize font-bold">{links}</h1>
                     <div className="pt-5">
