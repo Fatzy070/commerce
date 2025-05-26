@@ -25,3 +25,6 @@
 .line:hover {
     border-bottom:1px solid black ;
 }
+.check:hover {
+     color: rgba(220,171,155,255);
+}

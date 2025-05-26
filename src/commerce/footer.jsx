@@ -1,12 +1,13 @@
 import Data from "./dress"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import pay from '../assets/payments.png'
+import './home.css'
 
 let Footer = () => {
     const { quick , lorem1 , links , E , newa , right , des , letter , site , fatzy} = Data[0]
     return (
-        <footer className="border bg-[rgba(237,241,255,255)] ">
-            <section className="px-16 pt-[4rem] pb-[3rem] flex flex-wrap justify-center lg:justify-between">
+        <footer className=" bg-[rgba(237,241,255,255)] ">
+            <section className=" lg:px-16 pt-[4rem] pb-[3rem] flex flex-wrap justify-center lg:justify-between">
                 <div className=" w-[350px]">
                     <div className=" flex items-center gap-2 text-5xl capitalize font-bold">
                         <div className="border-1 text-[rgba(220,171,155,255)] border-white px-3 py-1">
@@ -34,7 +35,7 @@ let Footer = () => {
                     <h1 className="text-2xl capitalize font-bold">{links}</h1>
                     <div className="pt-5">
                         {quick.map((item , index) => (
-                            <div key={index} className="flex gap-2"> 
+                            <div key={index} className="check flex gap-2"> 
                                 <div >
                                     <FontAwesomeIcon icon={item.icon}  className="text-[15px]" />
                                 </div>
@@ -50,7 +51,7 @@ let Footer = () => {
                         <h1 className="text-2xl capitalize font-bold">{links}</h1>
                     <div className="pt-5">
                         {quick.map((item , index) => (
-                            <div key={index} className="flex gap-2"> 
+                            <div key={index} className="check flex gap-2"> 
                                 <div >
                                     <FontAwesomeIcon icon={item.icon}  className="text-[15px]" />
                                 </div>
@@ -62,11 +63,11 @@ let Footer = () => {
                     </div>
                     </div>
                 </div>
-                <div>
-                    <h1 className="text-2xl capitalize font-bold" >{letter}</h1>
+                <div className="w-full lg:w-auto mx-6 lg:mx-0">
+                    <h1 className="text-center lg:text-start text-2xl capitalize font-bold" >{letter}</h1>
                     <form action="" className="pt-5">
-                        <input type="text" placeholder="Your Name" className="border w-[100%] h-[50px] pl-2.5 mb-4" /> <br/>
-                        <input type="text" placeholder="Your Email" className="border w-[100%] h-[50px] pl-2.5 mb-4"  /> <br/>
+                        <input type="text" placeholder="Your Name" className="bg-white w-[100%] h-[50px] pl-2.5 mb-4" /> <br/>
+                        <input type="text" placeholder="Your Email" className="bg-white w-[100%] h-[50px] pl-2.5 mb-4"  /> <br/>
                         <button type="submit" className="sub capitalize font-normal w-full h-[50px] bg-[rgba(209,156,151,255)]">subscribe now</button>
                     </form>
                 </div>
