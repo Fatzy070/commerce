@@ -7,7 +7,7 @@ let Footer = () => {
     const { quick , lorem1 , links , E , newa , right , des , letter , site , fatzy} = Data[0]
     return (
         <footer className=" bg-[rgba(237,241,255,255)] ">
-            <section className=" lg:px-16 pt-[4rem] pb-[3rem] flex flex-wrap justify-center lg:justify-between">
+            <section className="px-10 lg:px-16 pt-[4rem] pb-[3rem] flex flex-wrap justify-center lg:justify-between">
                 <div className=" w-[350px]">
                     <div className=" flex items-center gap-2 text-5xl capitalize font-bold">
                         <div className="border-1 text-[rgba(220,171,155,255)] border-white px-3 py-1">
@@ -63,7 +63,7 @@ let Footer = () => {
                     </div>
                     </div>
                 </div>
-                <div className="w-full lg:w-auto mx-6 lg:mx-0">
+                <div className="w-full lg:w-auto ">
                     <h1 className="text-center lg:text-start text-2xl capitalize font-bold" >{letter}</h1>
                     <form action="" className="pt-5">
                         <input type="text" placeholder="Your Name" className="bg-white w-[100%] h-[50px] pl-2.5 mb-4" /> <br/>
