@@ -7,7 +7,7 @@ let Footer = () => {
     const { quick , lorem1 , links , E , newa , right , des , letter , site , fatzy} = Data[0]
     return (
         <footer className=" bg-[rgba(237,241,255,255)] ">
-            <section className="px-10 lg:px-16 pt-[4rem] pb-[3rem] flex flex-wrap justify-center lg:justify-between">
+            <section className="px-10 lg:px-16 pt-[4rem] pb-[3rem] flex flex-wrap  lg:justify-between">
                 <div className=" w-[350px]">
                     <div className=" flex items-center gap-2 text-5xl capitalize font-bold">
                         <div className="border-1 text-[rgba(220,171,155,255)] border-white px-3 py-1">
